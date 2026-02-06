@@ -1,0 +1,14 @@
+{
+	"name": "Node.js",
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:18",
+	
+	"postCreateCommand": "echo 'Container ready!'",
+	
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"dbaeumer.vscode-eslint"
+			]
+		}
+	}
+}
