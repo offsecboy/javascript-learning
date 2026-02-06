@@ -2,13 +2,21 @@
 	"name": "Node.js",
 	"image": "mcr.microsoft.com/devcontainers/javascript-node:18",
 	
-	"postCreateCommand": "echo 'Container ready!'",
+	"features": {},
+	
+	"forwardPorts": [3000],
+	
+	"postCreateCommand": "npm install",
 	
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"dbaeumer.vscode-eslint"
+				"dbaeumer.vscode-eslint",
+				"esbenp.prettier-vscode",
+				"ms-vscode.vscode-typescript-next"
 			]
 		}
-	}
+	},
+	
+	"remoteUser": "node"
 }
